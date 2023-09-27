@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="main-body">
+        <section class="inputs">
+            <div class="day-input">
+                <p class="day-input-head">DAY</p>
+                <input type="text" maxlength="2" placeholder="DD" class="d-input">
+                <p class="day-err">Must be a valid date</p>
+            </div>
+            <div class="month-input">
+                <p class="month-input-head">MONTH</p>
+                <input type="text" maxlength="2" placeholder="MM" class="m-input">
+                <p class="month-err">Must be a valid month</p>
+            </div>
+            <div class="year-input">
+                <p class="year-input-head">YEAR</p>
+                <input type="text" maxlength="4" placeholder="YYYY" class="y-input">
+                <p class="year-err">Must be in the past</p>
+            </div>
+        </section>
+        <section class="arrow">
+            <div class="arrow-line"></div>
+            <div>
+                <img src="./images/icon-arrow.svg" alt="" class="arrow-btn" onclick="calculateAge()">
+            </div>
+        </section>
+        <section class="result">
+            <p class="year-res"><span class="year-res-span">--</span> years</p>
+            <p class="month-res"><span class="month-res-span">--</span> months</p>
+            <p class="day-res"><span class="day-res-span">--</span> days</p>
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
